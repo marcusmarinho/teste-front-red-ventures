@@ -1,0 +1,14 @@
+@import url(./styles/global.scss);
+@import url(./styles/header.scss);
+@import url(./styles/menu-select.scss);
+@import url(./styles//menu-result.scss);
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+

@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    position: relative;
+    background-color: var(--backgroundItem);
+    width: 100%;
+    height: 500px;
+
+    .banner__img--left {
+        position: absolute;
+
+        background: url(../images/hero/desktop/left-leaves.png);
+        background-size: cover;
+
+        width: 862px;
+        height: inherit;
+
+        .img__text-box {
+            padding: 3.75rem 0 7.75rem 18.75rem;
+            max-width: 25rem;
+            &__title {
+                color: var(--backgroundSelectMenu);
+                font-weight: 500;
+            }
+            &__desc {
+                margin-top: 2.5rem;
+                font-size: 4.375rem;
+                color: var(--backgroundSelectMenu);
+                font-weight: bold;
+            }
+            &__icon {
+                margin-top: 1.875rem;
+            }
+        }
+    }
+
+    .banner__img--center {
+        position: absolute;
+        left: 805px;
+        top: 40px;
+
+        background: url(../images/hero/desktop/plantperson.png);
+        background-size: cover;
+
+        width: 335px;
+        height: 430px;
+    }
+
+    .banner__img--right {
+        position: absolute;
+        right: 0;
+
+        background: url(../images/hero/desktop/right-leaves.png);
+        background-size: cover;
+
+        width: 361px;
+        height: inherit;
+    }
+}
+
+.header-mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+        background-color: var(--backgroundItem);
+        width: 100%;
+        min-height: 700px;
+        position: relative;
+
+        .banner-mobile__img--first {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 412px;
+            background: url(../images/hero/mobile/mobile-leaves.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            .mobile-text-box {
+                padding: 2.5rem 2.188rem 0 2.188rem;
+                max-width: 25rem;
+                .text-box__title {
+                    color: var(--backgroundSelectMenu);
+                    font-weight: 500;
+                }
+                .text-box__desc {
+                    margin-top: 2.5rem;
+                    font-size: 3rem;
+                    color: var(--backgroundSelectMenu);
+                    font-weight: bold;
+                }
+                .text-box__icon {
+                    margin-top: 1rem;
+                }
+            }
+
+        }
+
+        .banner-mobile__img--second {
+            position: absolute;
+            bottom: 45px;
+            width: 100%;
+            height: 305px;
+            background: url(../images/hero/mobile/mobile-plantperson.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

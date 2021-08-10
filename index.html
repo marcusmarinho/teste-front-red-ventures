@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Front End Test - Greenthumb</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./index.scss" />
+</head>
+
+<body>
+  <section class="main">
+
+    <header class="header">
+
+      <div class="banner__img--left">
+        <div class="img__text-box">
+          <p class="img__text-box__title">green thumb.</p>
+          <p class="img__text-box__desc">Find your next green friend</p>
+          <img class="img__text-box__icon" src="./images/icons/arrow-down.svg" >
+        </div>
+
+      </div>
+
+      <div class="banner__img--center"></div>
+
+      <div class="banner__img--right"></div>
+
+    </header>
+
+    <header class="header-mobile">
+
+      <div class="banner-mobile__img--first">
+        <div class="mobile-text-box">
+          <p class="text-box__title">green thumb.</p>
+          <p class="text-box__desc">Find your next green friend</p>
+          <img class="text-box__icon" src="./images/icons/arrow-down.svg" >
+        </div>
+
+      </div>
+      <div class="banner-mobile__img--second"></div>
+
+    </header>
+
+    <section class="container-select">
+
+      <label class="select-item">
+        <img src="./images/illustrations/sun.png" >
+        <p class="select-item__label"><span>1.</span>Set the amount of <span>sunlight</span> your plant will
+          get.</p>
+
+        <div class="select-box">
+
+          <div class="options-container" data-op-container-sunlight="">
+
+            <div class="option">
+              <input type="radio" class="radio" id="no" name="category" />
+              <label data-op-sunlight for="no">no</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="low" name="category" />
+              <label data-op-sunlight for="low">low</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="high" name="category" />
+              <label data-op-sunlight for="high">high</label>
+            </div>
+
+          </div>
+
+          <div class="selected-box">
+            <span class="selected" data-amount-sunlight="">Select...</span>
+            <div class="selected-arrow" data-arrow-sunlight=""></div>
+          </div>
+
+        </div>
+
+      </label>
+
+      <label class="select-item">
+        <img src="./images/illustrations/wateringcan.png" >
+        <p class="select-item__label"><span>2.</span> How often do you want to <span>water</span> your plant?
+        </p>
+
+        <div class="select-box">
+          <div class="options-container" data-op-container-water="">
+
+            <div class="option">
+              <input type="radio" class="radio" id="daily" name="category" />
+              <label data-op-water for="daily">daily</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="regularly" name="category" />
+              <label data-op-water for="regularly">regularly</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="rarely" name="category" />
+              <label data-op-water for="rarely">rarely</label>
+            </div>
+
+          </div>
+
+          <div class="selected-box">
+            <span class="selected" data-water="">Select...</span>
+            <div class="selected-arrow" data-arrow-water=""></div>
+          </div>
+
+        </div>
+
+      </label>
+
+      <label class="select-item">
+        <img src="./images/illustrations/dog.png" >
+        <p class="select-item__label"><span>3.</span> Do you have pets? Do they <span>chew</span> plants? </p>
+
+
+        <div class="select-box">
+          <div class="options-container" data-op-container-pet="">
+
+            <div class="option">
+              <input type="radio" class="radio" value="false" id="false" name="category" />
+              <label data-op-pet for="false">No/They don’t care</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" value="true" class="radio" data-pet-radio id="yes" name="category" />
+              <label data-op-pet for="yes">Yes</label>
+            </div>
+
+          </div>
+
+          <div class="selected-box">
+            <span class="selected" data-pet="">Select...</span>
+            <div class="selected-arrow" data-arrow-pet=""></div>
+          </div>
+
+        </div>
+
+      </label>
+
+    </section>
+
+    <section class="container-result">
+
+      <div class="not-found" id="notFound">
+
+        <div class="text-box">
+          <p class="text-box__title">No results yet…</p>
+          <p class="text-box__desc">Use the filters above to find the plant that best fits your environment :)</p>
+        </div>
+
+        <div class="not-found__img">
+          <img src="./images/illustrations/no-results.png" >
+        </div>
+
+      </div>
+
+      <div class="data-found" id="dataFound">
+
+        <div class="data-found__img"></div>
+
+        <p class="data-found__title">Our picks for you</p>
+
+        <div class="content-found-mobile" data-card-container=""></div>
+
+        <div class="content-found">
+          <div class="grid-container" data-content-list>
+            
+
+          </div>
+
+        </div>
+
+        <div class="data-found__button">
+          <button data-btn-bottom class="button--bottom">
+            <img class="button__icon" src="./images/icons/arrow-up.svg" >back to the top
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </section>
+  <script src="./js/controller.js"></script>
+  <script src="./js/template.js"></script>
+  <script src="./js/data-service.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--background);
+}
+
+:root {
+    --background: #F2F2F2;
+    --backgroundSelectMenu: #FFFFFF;
+    --backgroundItem: #75bc97;
+    --border: #a8a8a8;
+    --text: #848484;
+    --textItem: #1E6B4E;
+    --textNotFound: #A9A9A9;
+    --buttonColor: #15573f;
+    --textItemMobile: #257556;
+    --title:#0c261c;
+}
+
